@@ -1,0 +1,7 @@
+{% extends "authentication/base.html" %}
+
+{% block content %}
+<h1> Welcome, {{username}} </h1>
+<p> Your password is {{password}}</p>
+<a href="{% url 'polls:poll' %}" class="btn btn-primary btn-lg">Go to Polls</a>
+{% endblock %}
